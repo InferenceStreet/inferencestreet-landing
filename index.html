@@ -238,17 +238,81 @@
         <p>Registered in Nevada, United States</p>
         <p>Nevada Business ID: NV20253479098, Certificate: B202511196287397</p>
         <p><a href="https://www.nvsilverflume.gov/home">Verify online via SilverFlume</a></p>
-        <p>Office: 732 S 6th St Ste N, Las Vegas, NV 89101, United States</p>
-        <p>Phone: 702-729-2949</p>
+        <p>
+          Office:
+          <a
+            href="https://www.google.com/maps/place/732+S+6th+St+Ste+N,+Las+Vegas,+NV+89101"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            732 S 6th St Ste N, Las Vegas, NV 89101, United States
+          </a>
+        </p>
+        <p>
+          Phone:
+          <a href="tel:+17027292949">702-729-2949</a>
+        </p>
+      </div>
+      <div class="footer-map" aria-label="Office location map">
+        <iframe
+          title="Map showing 732 S 6th St Ste N, Las Vegas, NV 89101"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.024765406378!2d-115.14397282342855!3d36.16240559977261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c3de4ac1755d%3A0xf1cd3d50a6a80abf!2s732%20S%206th%20St%20Ste%20N%2C%20Las%20Vegas%2C%20NV%2089101!5e0!3m2!1sen!2sus!4v1715217600000!5m2!1sen!2sus"
+          loading="lazy"
+          allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
       <div class="footer-links">
-        <a href="#" aria-label="Disclaimer">Disclaimer</a>
-        <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+        <button class="link-button" data-modal-target="disclaimer-modal">Disclaimer</button>
+        <button class="link-button" data-modal-target="privacy-modal">Privacy Policy</button>
       </div>
     </div>
     <p class="legal">© <span id="current-year"></span> Inference Street LLC. Nothing on this website constitutes investment advice, an offer to sell, or a solicitation to buy any security or financial instrument. Any references to trading or performance are for informational purposes only, are based on internal research, and are not audited. Past performance (real or simulated) is not indicative of future results.</p>
     <!-- @-- Analytics placeholder -- Add analytics script here when ready. -->
   </footer>
+
+  <div class="modal" id="disclaimer-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-content" tabindex="-1">
+      <div class="modal-header">
+        <h3 id="disclaimer-title">Disclaimer</h3>
+        <button class="close-button" aria-label="Close disclaimer" data-close-modal>&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          The information on this site is for informational purposes only and does not constitute investment advice or a
+          solicitation to buy or sell any security. Any references to performance are based on internal research or
+          backtests and are unaudited. Past performance, whether simulated or actual, is not indicative of future results.
+        </p>
+        <p>
+          No representation or warranty is made regarding the accuracy or completeness of the information provided. Any
+          investment decisions should be made after consulting with qualified professional advisors and reviewing your
+          individual circumstances.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="privacy-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-content" tabindex="-1">
+      <div class="modal-header">
+        <h3 id="privacy-title">Privacy Policy</h3>
+        <button class="close-button" aria-label="Close privacy policy" data-close-modal>&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          We do not sell or share personal information. If you contact us, we may use your details solely to respond to your
+          inquiry and to maintain business records in accordance with applicable law.
+        </p>
+        <p>
+          The site may use basic analytics to understand aggregated traffic patterns. We do not track individual browsing
+          behavior beyond what is necessary to operate and secure the website. For questions about data practices, please
+          reach out to <a href="mailto:hello@inferencestreet.com">hello@inferencestreet.com</a>.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/main.js" defer></script>
 </body>

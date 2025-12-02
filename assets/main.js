@@ -35,3 +35,51 @@ links.forEach((link) => {
     }
   });
 });
+
+// Modal interactions
+const modals = document.querySelectorAll('.modal');
+const modalTriggers = document.querySelectorAll('[data-modal-target]');
+const modalClosers = document.querySelectorAll('[data-close-modal]');
+
+const openModal = (modal) => {
+  modal.classList.add('show');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+  const content = modal.querySelector('.modal-content');
+  if (content instanceof HTMLElement) {
+    content.focus({ preventScroll: true });
+  }
+};
+
+const closeModal = (modal) => {
+  modal.classList.remove('show');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+};
+
+modalTriggers.forEach((trigger) => {
+  const targetId = trigger.getAttribute('data-modal-target');
+  if (!targetId) return;
+  const modal = document.getElementById(targetId);
+  if (!modal) return;
+
+  trigger.addEventListener('click', (event) => {
+    event.preventDefault();
+    openModal(modal);
+  });
+});
+
+modalClosers.forEach((closer) => {
+  closer.addEventListener('click', () => {
+    const modal = closer.closest('.modal');
+    if (modal) closeModal(modal);
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    modals.forEach((modal) => {
+      if (modal.classList.contains('show')) closeModal(modal);
+    });
+  }
+});
