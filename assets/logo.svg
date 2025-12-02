@@ -1,0 +1,9 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Inference Street logo">
+  <rect width="120" height="120" rx="18" fill="#0F172A"/>
+  <path d="M28 86C36 62 52 44 74 36" stroke="#6DF7D6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M34 64C45 64 58 54 64 42C70 30 83 24 94 26" stroke="#4F8CFF" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="38" cy="80" r="6" fill="#4F8CFF"/>
+  <circle cx="70" cy="42" r="6" fill="#6DF7D6"/>
+  <circle cx="90" cy="28" r="6" fill="#4F8CFF"/>
+  <text x="60" y="105" text-anchor="middle" fill="#E8EDF7" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">IS</text>
+</svg>
